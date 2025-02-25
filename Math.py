@@ -39,22 +39,85 @@ print (" ")
 
 #3D Volume Calculator
 
-print ("3D Volume Calculator")
+print (" ")
+print ("My 3D Volume Calculator")
+print (" ")
 print ("What shape would you like to calculate the volume of?")
 print ("Prism, Sphere, Cone, or Cylinder?")
+print (" ")
 shape = str(input())
+print (" ")
 if (shape == "Prism"):
     print ("Triangular, Rectangular, or Cuboid?")
+    print (" ")
     prism = str(input())
+    print (" ")
     if (prism == "Triangular"):
         #Difine Base Value
         print ("Input base value")
         b = int(input())
+        print (" ")
         #Difine Height Value
         print ("Input height value")
         h = int(input())
+        print (" ")
         #Difine Length Value
         print ("Input length value")
         l = int(input())
+        print (" ")
         v = 0.5*b*h*l
-        print (str("the volume is ") + str(v))
+        print (str("The volume is ") + str(v))
+    if (prism == "Rectangular"):
+        #Difine length Value
+        print ("Input length value")
+        l = int(input())
+        print (" ")
+        #Difine Width Value
+        print ("Input width value")
+        w = int(input())
+        print (" ")
+        #Difine Height Value
+        print ("Input height value")
+        h = int(input())
+        print (" ")
+        v = l*w*h
+        print (str("The volume is ") + str(v))
+    if (prism == "Cuboid"):
+        #Difine Side Length Value
+        print ("Input side length value")
+        sl = int(input())
+        print (" ")
+        v = sl**3
+        print (str("The volume is ") + str(v))
+if (shape == "Sphere"):
+    #Difine Radius Value
+    print ("Input radius value")
+    r = int(input())
+    print (" ")
+    v = (4/3)*math.pi*r**3
+    print (str("The volume is ") + str(v))
+if (shape == "Cone"):
+    #Difine Radius Value
+    print ("Input radius value")
+    r = int(input())
+    print (" ")
+    #Difine Height Value
+    print ("Input height value")
+    h = int(input())
+    print (" ")
+    v = (h/3)*math.pi*r**2
+    print (str("The volume is ") + str(v))
+if (shape == "Cylinder"):
+    #Difine Radius Value
+    print ("Input radius value")
+    r = int(input())
+    print (" ")
+    #Difine Height Value
+    print ("Input height value")
+    h = int(input())
+    print (" ")
+    v = h*math.pi*r**2
+    print (str("The volume is ") + str(v))
+print (" ")
+print (str("Thank you for using my volume calculator!"))
+print (" ")
